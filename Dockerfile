@@ -6,9 +6,9 @@ RUN apt install -y wget nano git
 EXPOSE 8888
 
 RUN conda install -c conda-forge jupyterlab
-RUN pip install tensorboard
-RUN conda install torchaudio
-RUN conda install torchvision
+RUN pip install tensorboard librosa
+RUN pip install torchaudio
+RUN pip install torchvision
 
 
 CMD ["bash"]
